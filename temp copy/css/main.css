@@ -1,0 +1,318 @@
+/* category section */
+div#room_section {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translate(0, -50%);
+    color: white;
+    font-size: 30px;
+    display: none;
+    background-image: radial-gradient(circle, #171424, black);
+    width: 72%;
+    height: 83%;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 12px;
+}
+/* 룸 이미지 */
+img#room {
+    position: absolute;
+    width: 26%;
+    left: 70%;
+    bottom: -148%;
+    transition-property: bottom;
+    transition-duration: 1.2s;
+    background-color: inherit;
+    z-index: 30;
+    box-shadow: 30px black;
+    filter: drop-shadow(9px 74px 11px #000);
+}
+/* 덤벨 이미지 */
+img#dumbbell {
+    width: 2%;
+    z-index: 50;
+    position: relative;
+    left: 70%;
+    transition-property: width, left, top;
+    transition-duration: 0.7s;
+    bottom: -168%;
+    cursor: pointer;
+}
+/* 청소기 이미지 */
+img#cleaner {
+    width: 2.5%;
+    z-index: 30;
+    position: relative;
+    left: 70%;
+    /* top: 146.3%; */ 
+    cursor: pointer;
+    transition-property: width, left, top;
+    transition-duration: 0.7s;
+    bottom: -143%;
+}
+/* 책 이미지 */
+img#book {
+    width: 2.2%;
+    z-index: 30;
+    position: relative;
+    left: 70%;
+    cursor: pointer;
+    transition-property: width, left, top;
+    transition-duration: 0.7s;
+    bottom: -159%;
+}
+/* 태블릿 이미지 */
+div#tablet {
+    position: absolute;
+    bottom: -87%;
+    width: 2.5%;
+    height: 14%;
+    left: 30.5%;
+    cursor: pointer;
+    z-index: 50;
+}
+/* 휴식 이미지 */
+div#rest {
+    position: absolute;
+    bottom: -115%;
+    width: 7.5%;
+    height: 31%;
+    left: 33%;
+    cursor: pointer;
+    z-index: 50;
+}
+/* 팀 이미지 */
+img#bpm_img {
+    width: 55%;
+    position: absolute;
+    top: 50%;
+    left: -70%;
+    transform: translate(-50%, -50%);
+    transition-property: left;
+    transition-duration: 1.2s;
+}
+/* 카테고리모드 자세히 보기 눌렀을 때 trainsition */
+#more_distribution {
+    transition-property: right;
+    transition-duration: 1.2s;
+}
+#mainBoxText1 {
+    transition-property: left;
+    transition-duration: 1.2s;
+}
+/* 캠모드 자세히 보기 눌렀을 때 trainsition */
+#more_marketing {
+    transition-property: right;
+    transition-duration: 1.2s;
+}
+#mainBoxText2 {
+    transition-property: left;
+    transition-duration: 1.2s;
+}
+/* 팀 소개 자세히 보기 눌렀을 때 transition */
+#more_subscription {
+    transition-property: right;
+    transition-duration: 1.2s;
+}
+#mainBoxText3 {
+    transition-property: left;
+    transition-duration: 1.2s;
+}
+/* 각 section */
+.mainBoxWrap .mainBox {
+    height: 100vh;
+    min-height: 550px;
+    position: relative;
+    overflow: hidden;
+}
+/* 메인 페이지 첫번째 section(video) */
+.mainBox .videoBox video {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    height: auto !important;
+    width: auto !important;
+    min-width: 100%;
+    min-height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover;
+    z-index: 3;
+}
+/* 메인 페이지 첫번째 section 문구 */
+.mainBox .mainText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-size: 6em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: -5px;
+    z-index: 10;
+}
+/* 메인 페이지 첫번째 section 문구중 강조 */
+.mainBox .mainText span {
+    font-weight: 700;
+    color: #fff;
+}
+/* 각 section 좌측 상단 문구*/
+.mainBox .mainBoxText {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+}
+/* 각 section 좌측 하단 문구*/
+.mainBox .mainBoxText .block {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+/* 각 section 좌측 문구 */
+.mainBox .mainBoxText .engText {
+    margin-top: 15px;
+    font-size: 2.5em;
+    font-family: "ProximaNova";
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+.mainBox .mainBoxText .engText::before {
+    content: "[";
+    display: block;
+    position: absolute;
+    top: 44%;
+    left: -35px;
+    transform: translate(0, -50%);
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 700;
+}
+.mainBox .mainBoxText .engText::after {
+    content: "]";
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: -35px;
+    transform: translate(0, -50%);
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 700;
+}
+/* 각 section 우측 문구 */
+.mainBox .mainBoxSubText {
+    position: absolute;
+    top: 55%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+/* 각 section 우측 상단 문구 */
+.mainBox .mainBoxSubText .textWrap {
+    font-size: 6em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: -5px;
+    padding-bottom: 50px;
+}
+/* 각 section 우측 문구중 강조 */
+.mainBox .mainBoxSubText .textWrap span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+}
+/* 각 section 우측 하단 문구 */
+.mainBox .mainBoxSubText .subText {
+    float: right;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-top: 20px;
+}
+/* footer */
+.footer {
+    padding: 50px 0;
+    z-index: 98;
+    width: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+@media(max-width:1000px) {}
+@media(max-width:880px) {
+    .mainBox .mainText {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding-top: 4em;
+        font-size: 4.5em;
+    }
+
+    .mainBox .mainSubText {
+        top: unset;
+        right: unset;
+        bottom: 200px;
+        transform: unset;
+        font-size: 1.8em;
+    }
+
+    .mainBox .mainBoxText {
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        padding-top: 16vh;
+        font-size: 1.4em;
+        margin-left: 5%;
+    }
+
+    .mainBox .mainBoxText .engText {
+        font-size: 2em;
+    }
+
+    .mainBox .mainBoxSubText {
+        top: unset;
+        right: unset;
+        transform: unset;
+        font-size: 1em;
+        position: unset;
+        display: inline-block;
+        padding-top: 18vh;
+        letter-spacing: 0;
+    }
+
+    .mainBox .mainBoxText .block {
+        margin-left: -5%;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .mainBox .mainSubText span.prox {
+        float: left;
+    }
+
+    .mainBox .mainText {
+        padding-top: 27vh;
+    }
+
+    .mainBox .mainSubText {
+        bottom: 24vh;
+        font-size: 1.4em;
+    }
+
+
+}
